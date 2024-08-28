@@ -1,0 +1,277 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* Header styling */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 40px; /* Increase padding for larger header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+    position: relative; /* Allows for absolute positioning of elements inside */
+    height: 80px; /* Increase header height */
+}
+
+/* Logo styling */
+.logo img {
+    height: 50px; /* Increase logo size */
+}
+
+/* Center search container */
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Optional: limits the width of the search bar */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the search bar fills the space */
+    max-width: 600px; /* Optional: limits the width of the search bar */
+}
+
+.search-bar input[type="text"] {
+    flex: 1; /* Allows the input to expand to fill available space */
+    padding: 10px; /* Increase padding for a larger search bar */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase font size */
+}
+
+.search-bar button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+}
+
+/* Action icons styling */
+.action-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px; /* Align icons to the right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.action-icons a {
+    margin-left: 20px; /* Increase space between icons */
+}
+
+.action-icons img {
+    height: 32px; /* Increase icon size */
+    width: 32px; /* Consistent size */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.action-icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Language Dropdown Styling */
+.more-options {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /* Space between language icon and other icons */
+}
+
+.language-icon {
+    cursor: pointer;
+    height: 32px; /* Increase height of language icon */
+}
+
+.dropdown-content {
+    display: none; /* Initially hide the dropdown */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on click */
+.more-options.show .dropdown-content {
+    display: block;
+}
+
+
+/* Ensure full width and proper spacing for header elements */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icons a {
+    text-align: center; /* Center the text under the image */
+    margin: 10px; /* Adds space around each icon */
+    font-size: 12px; /* Makes the text smaller */
+    color: #333; /* Sets the text color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.icons img {
+    width: 50px; /* Adjust image width */
+    height: 50px; /* Adjust image height */
+    display: block; /* Ensures the image is a block-level element */
+    margin: 0 auto; /* Centers the image */
+}
+
+.weather-categories-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.weather-info {
+    margin-right: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.more-options {
+    position: relative;
+    display: inline-block;
+}
+
+.dots {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on click */
+.more-options.show .dropdown-content {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.news-card {
+    width: 300px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 15px;
+}
+
+.news-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.news-summary {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}

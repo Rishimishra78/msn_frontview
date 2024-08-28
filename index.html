@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSN-like Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="msn-logo.png" alt="MSN Logo">
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+            </div>
+            <div class="action-icons">
+                <!-- Action icons in the left corner -->
+                <a href="#g" title="Rewards">
+                    <img src="images/reward.png" alt="Rewards">
+                </a>
+                <a href="profile.html" title="Profile">
+                    <img src="images/profile.png" alt="Profile">
+                </a>
+                <a href="c:\Users\jpg" title="Notifications">
+                    <img src="images/notification.jpg" alt="Notifications">
+                </a>
+                <a href="settings.html" title="Settings">
+                    <img src="images/setting.png" alt="Settings">
+                </a>
+                <!-- Language Icon with Dropdown -->
+                <div class="more-options">
+                    <img src="images/language.png" alt="Language" class="language-icon" onclick="toggleLanguageDropdown()">
+                    <div class="dropdown-content" id="languageDropdown">
+                        <a href="?lang=en" class="language-option">English</a>
+                        <a href="?lang=hi" class="language-option">Hindi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="icons">
+        <a href="http://www.outlook.com" target="_blank">
+            <img src="images/outlook.jpg" alt="Outlook">
+            <br><span>Outlook</span>
+        </a>
+        <br>
+        <a href="http://www.Flipkart.com" target="_blank">
+            <img src="images/fp.png" alt="Flipkart">
+            <br><span>Flipkart</span>
+        </a>
+        <br>
+        <a href="http://www.Find a Tutor.com" target="_blank">
+            <img src="images/trt.png" alt="Find a Tutor">
+            <br><span>Find a Tutor</span>
+        </a>
+        <br>
+        <a href="http://www.Booking.com" target="_blank">
+            <img src="images/booking.png" alt="Booking">
+            <br><span>Booking</span>
+        </a>
+        <br>
+        <a href="http://www.Sports.com" target="_blank">
+            <img src="images/sport.png" alt="Sports">
+            <br><span>Sports</span>
+        </a>
+        <br>
+        <a href="http://www.Croma.com" target="_blank">
+            <img src="images/croma.png" alt="Croma">
+            <br><span>Croma</span>
+        </a>
+        <br>
+        <a href="http://www.Games.com" target="_blank">
+            <img src="images/game.jpg" alt="Games">
+            <br><span>Games</span>
+        </a>
+        <br>
+        <a href="http://www.Shopping.com" target="_blank">
+            <img src="images/shooping.png" alt="Shopping">
+            <br><span>Shopping</span>
+        </a>
+        <br>
+        <a href="http://www.Facebook.com" target="_blank">
+            <img src="images/facebook.jpg" alt="Facebook">
+            <br><span>Facebook</span>
+        </a>
+    </div><br><br>
+   
+    
+       
+    <main>
+        <!-- Weather Bar and Categories Section -->
+        <div class="weather-categories-bar">
+            <!-- Weather Info -->
+            <span class="weather-info">Lucknow 31°C</span>
+
+            <!-- Categories Links including Language Options -->
+            <div class="categories">
+                <a href="#" class="language">Hindi !! Marathi</a>
+                <a href="#">News</a>
+                <a href="#">Entertainment</a>
+                <a href="#">Sports</a>
+                <a href="#">Gaming</a>
+                <a href="#">Money</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Health</a>
+                <a href="#">Food</a>
+                <a href="#">Travel</a>
+                <a href="#">Autos</a>
+                <a href="#">Video</a>
+
+                <!-- 3 Dots Menu -->
+                <div class="more-options">
+                    <span class="dots" onclick="toggleMenu()">⋮</span>
+                    <div class="dropdown-content" id="moreMenu">
+                        <a href="#">Weather</a>
+                        <a href="#">Politics</a>
+                        <a href="#">Technology</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- News Card 1 -->
+            
+<div class="news-card">
+                <img src="images/calcutta.jpg" alt="News Image 1" class="news-image">
+                <div class="news-info">
+                    <h2 class="news-title">Nabanna March Live Updates: Student rally turns violent as Kolkata police lathicharge, use tear gas shells to disperse protesters enroute Bengal secretariat
+</h2>
+                    <p class="news-summary">Nabanna Abhijan Live Updates: The Bharatiya Janata Party in West Bengal has called for a 12-Hour Bangla Bandh tomorrow (August 28).
+                    </p>
+                    <a href="https://indianexpress.com/article/cities/kolkata/kolkata-rape-murder-case-nabanna-abhiyan-live-updates-bjp-protest-tmc-9534951/" target="_blank" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="news-card">
+                <img src="images/pm.jpg" alt="News Image 2" class="news-image">
+                <div class="news-info">
+                    <h2 class="news-title">PM Modi speaks with Russia’s Putin; addresses recent visit to Ukraine, confirms readiness to attend BRICS Summit in Kazan</h2>
+                    <p class="news-summary">Prime Minister Modi discusses Russia-Ukraine conflict with President Putin, reaffirms India's commitment to peaceful resolution and.</p>
+                    <a href="htt            ps://www.thehindu.com/news/national/pm-modi-speaks-with-russias-putin-addresses-recent-visit-to-ukraine/article68572167.ece" target="_blank" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/airoplane.jpg" alt="News Image 2" class="news-image">
+                <div class="news-info">
+                    <h2 class="news-title">Latest lifestyle News, Live Updates Today August 27, 2024: Travel turbulence eases in Colombia: Airlines rebound, full flight schedules restored after jet fuel disruption</h2>
+                    <p class="news-summary">Stay informed with Hindustan Times' live updates! Track the latest lifestyle news including fashion trends, style guide & Tips,..</p>
+                    <a href="https://www.hindustantimes.com/lifestyle/latest-lifestyle-today-live-updates-august-27-2024-101724718609973.html" target="_blank" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/kl rahul.jpg" alt="News Image 2" class="news-image">
+                <div class="news-info">
+                    <h2 class="news-title">IPL Owners Coming From Business Background...": KL Rahul's Loud And Clear Message Ahead Of Auction</h2>
+                    <p class="news-summary">Lucknow Super Giants skipper KL Rahul makes his stance clear on IPL franchise owners' approach towards selecting players.</p>
+                    <a href="https://sports.ndtv.com/cricket/ipl-owners-coming-from-business-background-kl-rahuls-loud-and-clear-message-ahead-of-auction-6419168" target="_blank" class="read-more">Read More</a>
+                </div>
+            <!-- Add more news cards as needed -->
+        </div> <div class="news-card">
+            <img src="images/k.kavita.jpg" alt="News Image 2" class="news-image">
+            <div class="news-info">
+                <h2 class="news-title">Partners in crime….: Union minister Bandi Sanjay Kumar's jab on Supreme Court bail to K Kavitha. KTR reacts</h2>
+                <p class="news-summary">The Supreme Court granted her bail in corruption and money laundering cases linked to the alleged Delhi excise policy scam</p>
+                <a href="https://www.hindustantimes.com/india-news/partners-in-crime-union-minister-ba" target="_blank" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="images/images.jpg" alt="News Image 2" class="news-image">
+            <div class="news-info">
+                <h2 class="news-title">Stocks in news: UltraTech, HCL Tech, HUL, Adani Power, Mazagon, Lemon Tree & Exicom Tele</h2>
+                <p class="news-summary">UltraTech, HCL Tech, HUL, Adani Power, Mazagaon, Lemon Tree & Exicom Tele and more may remain under the spotlight before the opening bell on Tuesday, August 27.</p>
+                <a href="https://www.businesstoday.in/markets/story/stocks-in-news-ultratech-hcl-tech-hul-adani-power-mazagon-lemon-tree-exicom-tele-443102-2024-08-27" target="_blank" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="images/new cover.jpg" alt="News Image 2" class="news-image">
+            <div class="news-info">
+                <h2 class="news-title">OrissaPost Page: 4 - English Daily ePaper | Today Newspaper | Latest news from India and world -</h2>
+                <p class="news-summary">today news .</p>
+                <a href="https://odishapostepaper.com/edition/4258/orissapost/page/4" target="_blank" class="read-more">Read More</a>
+            </div>
+        <!-- Add more news cards as needed -->
+    </div>
+
+
+        <footer>
+            <!-- Add your footer content here -->
+        </footer>
+    </main>
+
+    
+    <footer>
+        <p>© 2024 Microsoft | Privacy and Cookies | Terms of Use | Advertise | Feedback</p>
+    </footer>
+</body>
+</html>
